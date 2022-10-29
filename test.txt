@@ -1,1 +1,11 @@
-test git
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[user]
+        name = William-Nimitz
+        email = mingchaitest27@gmail.com
+[credential]
+        useHttpPath = true
+
